@@ -1,0 +1,93 @@
+:root {
+  scroll-behavior: smooth;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/SF-Pro-Display-Regular.woff2") format("woff2"),
+      url("../fonts/SF-Pro-Display-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/SF-Pro-Display-Bold.woff2") format("woff2"),
+      url("../fonts/SF-Pro-Display-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Space Age Cyrillic";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/spaceagecyrillic-regular.woff2") format("woff2"),
+      url("../fonts/spaceagecyrillic-regular.woff") format("woff");
+}
+
+body {
+  /* font-family: "Roboto Condensed", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 300; */
+  color: #ffffff;
+  background-color: #162231;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.page-header {
+  background-color: #192532;
+  background-image: url("../images/bg-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.page-header .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.page-header__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 75px;
+  padding-bottom: 30px;
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+}
+
+.menu__link {
+  text-transform: uppercase;
+}
