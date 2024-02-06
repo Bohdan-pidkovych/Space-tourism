@@ -34,10 +34,10 @@
 }
 
 body {
-  /* font-family: "Roboto Condensed", sans-serif;
-  font-size: 18px;
-  line-height: 21px;
-  font-weight: 300; */
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: normal;
   color: #ffffff;
   background-color: #162231;
 }
@@ -45,6 +45,13 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+button {
+  border: none;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 ul,
@@ -79,7 +86,7 @@ ol {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 75px;
+  padding-top: 5%;
   padding-bottom: 30px;
 }
 
@@ -89,5 +96,94 @@ ol {
 }
 
 .menu__link {
+  font-size: 18px;
+  line-height: 21px;
   text-transform: uppercase;
+  transition: color 0.5s;
+}
+
+.menu__link:hover {
+  color: #cb0e0e;
+}
+
+.page-header__phone {
+  margin-left: auto;
+  font-size: 24px;
+  line-height: 29px;
+  transition: color 0.5s;
+}
+
+.page-header__phone:hover {
+  color: #cb0e0e;
+}
+
+.page-header__login-button {
+  margin-left: 20px;
+  margin-right: 130px;
+  transition: transform 0.3s;
+}
+
+.page-header__login-button:hover {
+  transform: scale(1.1);
+}
+
+.page-header__main {
+  max-width: 600px;
+}
+
+.page-header__title {
+  margin: 0;
+  text-align: center;
+  font-family: "Space Age Cyrillic", sans-serif;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: normal;
+}
+
+.page-header__title span {
+  font-size: 110px;
+}
+
+.page-header__slogan {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.page-header__slogan p {
+  margin: 0;
+}
+
+.page-header__buy-button {
+  display: inline-block;
+  width: 100%;
+  padding: 15px 10px;
+  border: 1px solid #ffffff;
+  text-align: center;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  transition: color 0.5s;
+}
+
+.page-header__buy-button:hover {
+  color: #cb0e0e;
+}
+
+.page-header__info {
+  display: flex;
+  justify-content: flex-end;
+  gap: 50px;
+  margin: 15px 0;
+}
+
+.page-header__info p {
+  width: 165px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 17px;
 }
